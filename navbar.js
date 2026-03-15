@@ -1,7 +1,7 @@
 function loadNav() {
   const style = document.createElement("style");
   style.textContent = `
-    .page-wrapper {
+    .page {
       display: flex;
     }
 
@@ -32,7 +32,7 @@ function loadNav() {
       text-decoration: underline;
     }
 
-    .main-content {
+    .content {
       padding: 20px 40px;
       flex-grow: 1;
     }
