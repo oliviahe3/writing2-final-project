@@ -22,6 +22,7 @@ function loadNav() {
       list-style: none;
       padding: 0;
       margin: 0;
+      margin-top: 20px;
     }
 
     #sidebar li {
@@ -31,6 +32,10 @@ function loadNav() {
     #sidebar a {
       text-decoration: none;
       color: #4a0080;
+    }
+    
+    #sidebar a.active {
+      font-weight: bold;
     }
 
     #sidebar a:hover {
@@ -59,4 +64,11 @@ function loadNav() {
       </ul>
     </nav>
   `;
+
+  const links = document.querySelectorAll("#sidebar a");
+  links.forEach(link => {
+    if (link.href === window.location.href) {
+      link.classList.add("active");
+    }
+  });
 }
