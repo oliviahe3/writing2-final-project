@@ -3,12 +3,13 @@ function loadNav() {
   style.textContent = `
     .page {
       display: flex;
+      background-color: #ffcfe5;
     }
 
     #sidebar {
       width: 180px;
       min-height: 100vh;
-      background-color: #f0f0f0;
+      background-color: #f8a5ca;
       padding: 20px;
       flex-shrink: 0;
     }
