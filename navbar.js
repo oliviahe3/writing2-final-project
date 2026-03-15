@@ -1,15 +1,18 @@
 function loadNav() {
   const style = document.createElement("style");
   style.textContent = `
+    body {
+      background-color: #fadfeb;
+      margin: 0;
+    }
     .page {
       display: flex;
-      background-color: #ffcfe5;
     }
 
     #sidebar {
       width: 180px;
       min-height: 100vh;
-      background-color: #f8a5ca;
+      background-color: #ffcfe5;
       padding: 20px;
       flex-shrink: 0;
     }
