@@ -2,8 +2,9 @@ function loadNav() {
   const style = document.createElement("style");
   style.textContent = `
     body {
-      background-color: #fadfeb;
+      background-color: #fae5ee;
       margin: 0;
+      font-family: 'Caveat', cursive;
     }
     .page {
       display: flex;
@@ -12,7 +13,7 @@ function loadNav() {
     #sidebar {
       width: 180px;
       min-height: 100vh;
-      background-color: #ffcfe5;
+      background-color: #fbd8e8;
       padding: 20px;
       flex-shrink: 0;
     }
@@ -46,6 +47,7 @@ function loadNav() {
   document.getElementById("navbar").innerHTML = `
     <nav id="sidebar">
       <ul>
+        <li><a href="index.html">Home</a></li>
         <li><a href="introduction.html">Introduction</a></li>
         <li><a href="breakfast.html">Breakfast</a></li>
         <li><a href="snack_morning.html">Snack - Morning</a></li>
